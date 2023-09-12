@@ -40,3 +40,30 @@
     height: 327px;
   }
 }
+.online-link {
+  box-shadow: 4px 0px 0px 0px $primary inset;
+  &:hover {
+    box-shadow: 4px 0px 0px 0px $secondary inset;
+    text-decoration: none;
+    background-color: $primary;
+    color: $white;
+  }
+}
+.album-img {
+  height: 267px;
+  object-fit: cover;
+  @include desktop {
+    height: 274px;
+  }
+}
+
+.-rotate-2 {
+  transform: rotate(-2deg) !important;
+}
+
+.rotate-2 {
+  transform: rotate(2deg) !important;
+}
+.rotate-4 {
+  transform: translate(-50%,-50%) rotate(4deg);
+}
