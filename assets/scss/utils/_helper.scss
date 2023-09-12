@@ -67,3 +67,12 @@
 .rotate-4 {
   transform: translate(-50%,-50%) rotate(4deg);
 }
+
+.page-item {
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+  }
+}
