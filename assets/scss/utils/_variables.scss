@@ -408,7 +408,10 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  15:15%,
+  25:25%,
   50: 50%,
+  75:75%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -800,7 +803,8 @@ $btn-disabled-opacity:        .65 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color:              var(--#{$prefix}link-color) !default;
-$btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
+// $btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
+$btn-link-hover-color:        $secondary !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
@@ -1223,22 +1227,27 @@ $pagination-padding-x-lg:           1.5rem !default;
 $pagination-font-size:              $font-size-base !default;
 
 $pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     $white !default;
+// $pagination-bg:                     $white !default;
+$pagination-bg:                     #f3f1e5 !default;
 $pagination-border-radius:          $border-radius !default;
 $pagination-border-width:           $border-width !default;
 $pagination-margin-start:           ($pagination-border-width * -1) !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $primary !default;
 
 $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg:               $gray-200 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+// $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
+// $pagination-hover-bg:               $gray-200  !default;
+// $pagination-hover-border-color:     $gray-200 !default;
+$pagination-hover-color:            $secondary !default;
+$pagination-hover-bg:               $primary  !default;
+$pagination-hover-border-color:     $primary !default;
 
-$pagination-active-color:           $component-active-color !default;
+// $pagination-active-color:           $component-active-color !default;
+$pagination-active-color:           $secondary !default;
 $pagination-active-bg:              $component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
